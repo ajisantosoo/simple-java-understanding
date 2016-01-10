@@ -43,7 +43,9 @@ public class forget_password {
                         new Thread(new Runnable() {
                             @Override
                             public void run() {
+                                // prosses the login
                                 login_system.proses(username, password);
+                                // just for being fun loading .(dot) animation
                                 for(int i = 0; i < 3; i++) {
                                     System.out.print(".");
                                     try {
@@ -54,6 +56,8 @@ public class forget_password {
                                 }
                             }
                         }).start();
+                    } else {
+                        System.out.print("Sorry program crashed.");
                     }
                 }
             } else {
