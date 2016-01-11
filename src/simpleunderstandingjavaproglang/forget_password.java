@@ -16,7 +16,7 @@ public class forget_password {
     private static String username = null, password = null;
 
     public static void main(String[] args) {
-        login login_system = new login(0, "alaminaji", "ajiganteng");
+        login login_system = new login(0, "alaminaji", "chit");
         System.out.print("Please input your :\n");
         System.out.print("Username :");
         try {
